@@ -15,7 +15,7 @@ public class Top10 { private final Map<String, Integer> words = new LinkedHashMa
     }
 
     public void printResult() {
-        System.out.printf("В тексте %d слов%n", words.size());
+        System.out.println("В тексте"  + words.size() + " слов");
         words.entrySet().stream().
                 limit(10)
                 .sorted(Map.Entry.<String, Integer>comparingByValue()
